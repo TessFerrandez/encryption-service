@@ -33,3 +33,5 @@ If you would like to contribute to the project, here is what you should do.
 
 When you have completed a task. Create a **pull request** to merge the work into the main repository. This is how you can create a PR: https://help.github.com/desktop/guides/contributing-to-projects/creating-a-pull-request/
 
+### Disclaimer ###
+**THIS CODE IN THIS REPOSITORY IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
