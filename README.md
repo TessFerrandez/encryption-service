@@ -12,9 +12,15 @@ A service to provide encryption capabilities in a RESTful manner
 1. Open **EncryptionService.sln** in Visual Studio 2017.
 2. Press **F5** to run the project.
 
-## Deployment ##
+## Deployment and staging ##
 
-// Everything from the **master** branch is continuously deployed to: https://encryption-service.azurewebsites.net/
+Everything that is merged is continuously deployed to: https://encryption-service-staging.azurewebsites.net/
+
+This is the staging environment. We can test things here as well!
+
+**Production environment**
+
+The production enviroment is manually swapped, and runs at: https://encryption-service.azurewebsites.net/
 
 ## Contributing ##
 
