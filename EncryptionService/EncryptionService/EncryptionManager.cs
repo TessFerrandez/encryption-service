@@ -2,9 +2,7 @@
 {
     public class EncryptionManager
     {
-        public static string Key { get; } = "jfkgotmyvhspcandxlrwebquiz";
-
-        public static string Decrypt(string cipherText)
+        public string Decrypt(string cipherText, string key)
         {
             char[] chars = new char[cipherText.Length];
 
@@ -16,14 +14,14 @@
                 }
                 else
                 {
-                    int j = Key.IndexOf(cipherText[i]) - 97;
+                    int j = key.IndexOf(cipherText[i]) - 97;
                     chars[i] = (char)j;
                 }
             }
 
             return new string(chars);
         }
-        public static string Encrypt(string plainText)
+        public string Encrypt(string plainText, string key)
         {
             char[] chars = new char[plainText.Length];
 
@@ -36,7 +34,7 @@
                 else
                 {
                     int j = plainText[i] - 97;
-                    chars[i] = Key[j];
+                    chars[i] = key[j];
                 }
             }
 
