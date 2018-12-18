@@ -14,7 +14,7 @@ A service to provide encryption capabilities in a RESTful manner
 
 ## Deployment ##
 
-// TODO: ...
+// Everything from the **master** branch is continuously deployed to: https://encryption-service.azurewebsites.net/
 
 ## Contributing ##
 
