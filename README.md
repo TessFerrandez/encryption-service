@@ -12,6 +12,10 @@ A service to provide encryption capabilities in a RESTful manner
 1. Open **EncryptionService.sln** in Visual Studio 2017.
 2. Press **F5** to run the project.
 
+## Deployment ##
+
+// TODO: ...
+
 ## Contributing ##
 
 If you would like to contribute to the project, here is what you should do.
