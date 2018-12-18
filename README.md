@@ -1,11 +1,11 @@
 # Encryption Service
-A service to provide encryption capabilities in a RESTful manner
+Our goal is to create a service (API) that can encrypt and decrypt incoming strings, using a given key.
 
 <a name="prerequisites"></a>
 ## Prerequisites ##
 
-1. Visual Studio 2017
-2. .NET Core 2.1
+1. Visual Studio 2017.
+2. .NET Core 2.1 (ASP.NET Core).
 
 ## Running from source ##
 
