@@ -1,4 +1,6 @@
-﻿namespace EncryptionService
+﻿using System;
+
+namespace EncryptionService
 {
     public class EncryptionManager
     {
@@ -6,36 +8,57 @@
         {
             char[] chars = new char[cipherText.Length];
 
-            for (int i = 0; i < cipherText.Length; i++)
+            try
             {
-                if (cipherText[i] == ' ')
+                for (int i = 0; i < cipherText.Length; i++)
                 {
-                    chars[i] = ' ';
-                }
-                else
-                {
-                    int j = key.IndexOf(cipherText[i]) - 97;
-                    chars[i] = (char)j;
-                }
+                    if (cipherText[i] == ' ')
+                    {
+                        chars[i] = ' ';
+                    }
+                    else
+                    {
+                        int j = key.IndexOf(cipherText[i]) + 97;
+                        chars[i] = (char)j;
+                    }
+                }    
             }
-
+            catch(IndexOutOfRangeException ex)
+            {
+                throw new Exception("key must be longer than alphabet");
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
             return new string(chars);
         }
         public string Encrypt(string plainText, string key)
         {
             char[] chars = new char[plainText.Length];
 
-            for (int i = 0; i < plainText.Length; i++)
+            try
             {
-                if (plainText[i] == ' ')
+                for (int i = 0; i < plainText.Length; i++)
                 {
-                    chars[i] = ' ';
+                    if (plainText[i] == ' ')
+                    {
+                        chars[i] = ' ';
+                    }
+                    else
+                    {
+                        int j = plainText[i] - 97;
+                        chars[i] = key[j];
+                    }
                 }
-                else
-                {
-                    int j = plainText[i] - 97;
-                    chars[i] = key[j];
-                }
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                throw new Exception("key must be longer than alphabet");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
 
             return new string(chars);

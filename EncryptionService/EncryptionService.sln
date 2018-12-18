@@ -5,7 +5,10 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EncryptionService", "EncryptionService\EncryptionService.csproj", "{5C50F2F8-035A-43CD-8D5C-AE4B69E1DAC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncruptionService.Tests", "EncruptionService.Tests\EncruptionService.Tests.csproj", "{BB40942B-75A1-41AE-8FEE-6A97895CD9E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptionService.Test", "EncryptionService.Test\EncryptionService.Test.csproj", "{0F016CE8-0780-463C-9A75-4ABEB3E201B9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5C50F2F8-035A-43CD-8D5C-AE4B69E1DAC2} = {5C50F2F8-035A-43CD-8D5C-AE4B69E1DAC2}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +20,10 @@ Global
 		{5C50F2F8-035A-43CD-8D5C-AE4B69E1DAC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C50F2F8-035A-43CD-8D5C-AE4B69E1DAC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C50F2F8-035A-43CD-8D5C-AE4B69E1DAC2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BB40942B-75A1-41AE-8FEE-6A97895CD9E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB40942B-75A1-41AE-8FEE-6A97895CD9E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB40942B-75A1-41AE-8FEE-6A97895CD9E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB40942B-75A1-41AE-8FEE-6A97895CD9E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F016CE8-0780-463C-9A75-4ABEB3E201B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F016CE8-0780-463C-9A75-4ABEB3E201B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F016CE8-0780-463C-9A75-4ABEB3E201B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F016CE8-0780-463C-9A75-4ABEB3E201B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
